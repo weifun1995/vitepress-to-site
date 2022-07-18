@@ -60,6 +60,14 @@ const groups = {
     ],
     views: [
         {
+            "text": '项目工程化',
+            dir: 'project',
+            children: [
+                '仿monorepe实现多工程管理',
+                'pnpm工作空间实现monorepe'
+            ],
+        },
+        {
             "text": '实现一个cli工具',
             dir: 'myCli',
             children: [

@@ -25,11 +25,30 @@ nvm uninstall <version>
 :::
 ![](/img/nvm.webp)
 
+## nrm
 
+```bash
+# 安装
+npm install -g nrm
+
+# 查看列表
+nrm ls 
+
+# 切换
+nrm use '名称'
+
+# 增加
+nrm add '名称' '源地址'
+
+# 删除
+nrm del '名称'
+```
+![](/img/nrm.png)
 ## pnpm
 :::tip
 速度快、节省磁盘空间的软件包管理器,[官网](https://www.pnpm.cn/)
 :::
+
 
 ```bash
 npm install -g pnpm
