@@ -5,6 +5,10 @@ export const createNav = function () {
             link: '/pages/dev/配置node环境'
         },
         {
+            text: '框架',
+            link: '/frames/vue/vue2.md'
+        },
+        {
             text: '其他',
             items: [
                 { text: '项目工程化管理', link: '/views/project/仿monorepe实现多工程管理' },

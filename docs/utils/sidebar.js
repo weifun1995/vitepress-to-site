@@ -100,6 +100,19 @@ const groups = {
                 'contextMenus相关api'
             ],
         }
+    ],
+    frames: [
+        {
+            "text": 'vue',
+            dir: 'vue',
+            children: [
+                'vue2',
+                'vue3之setup方案',
+                'vue3自定义指令',
+                'vue3自定义插件',
+                '渲染函数'
+            ],
+        },
     ]
 } 
 
@@ -119,7 +132,7 @@ export const getSidebar = function (classify) {
 }
 
 export const createSidebar = function () {
-    let toc = ['pages', 'views']
+    let toc = ['pages', 'views', 'frames']
     let obj = {}
     toc.forEach(item => {
         let key = `/${item}/`
