@@ -13,14 +13,41 @@ model: {
 默认情况下子组件需要更改父组件的某个状态需要显式的在子组件提交事件,父组件监听事件,显得繁琐。因此vue提供了`.sync`这种优雅的,可以省掉父组件的监听事。
 
 ```html
-<child @update:show="isShow" />
+<rl-child @update:show="isShow" />
 <!-- 等同于 -->
-<child show.sync="isShow" />
+<rl-child show.sync="isShow" />
 ```
 
 ```js
 // 子组件
 this.$emit('update:show', 'xx数据')
+```
+
+## hook
+- 我们在生命周期函数里面调用另一个生命周期函数钩子去执行一些事情
+```js
+mounted () {
+  this.$once('hook:beforeDestroy', function () {
+    // do something
+  })
+},
+```
+
+- 父组件监听子组件的生命周期函数钩子
+```html
+<!-- 父组件使用子组件 -->
+<rl-child
+  :value="40"
+  @hook:mounted="handleChildMounted"
+/>
+```
+
+## 组件懒加载
+```js
+components: {
+    historyTab: resolve => {require([ '../../component/historyTab/historyTab.vue' ], resolve)}, //懒加载
+    //historyTab: () => import('../../component/historyTab/historyTab.vue')
+},
 ```
 
 ## eventBus

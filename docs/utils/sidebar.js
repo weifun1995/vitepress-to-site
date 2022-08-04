@@ -7,7 +7,8 @@ const groups = {
                 '配置node环境',
                 '配置项目axios',
                 '配置github秘钥',
-                'node支持esm模块'
+                'node支持esm模块',
+                '开发中使用git'
             ],
         },
         {
@@ -30,6 +31,7 @@ const groups = {
             text: 'javaScript',
             dir: 'javaScript',
             children: [
+                '前端模块化',
                 '判断元素是否在视口内',
                 '检测dom变化',
                 '判定鼠标是否点击的元素本身'

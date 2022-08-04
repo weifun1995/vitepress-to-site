@@ -21,6 +21,18 @@ let appData = getCurrentInstance()
 
 ```
 
+## 获取路由和vuex
+```js
+import {useRoute, useRouter} from 'vue-router'
+import {useStore} from 'vuex'
+
+
+const store = useStore()
+
+const router = useRouter() // 路由跳转
+const route = useRoute()   // 路由参数
+```
+
 ## props
 ``` js
 const props = defineProps({
