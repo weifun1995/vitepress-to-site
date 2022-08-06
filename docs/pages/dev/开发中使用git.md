@@ -2,7 +2,7 @@
 - 常用的开发模式是远程库不能直接提交,只能通过codehub等发起合并请求
 - 我们需要自己fork一个仓库作为远程仓库
 
-```sh {5,11,20}
+```sh {5,11,20,26,29}
 # 本地初始化git仓库
 git init
 
@@ -29,6 +29,9 @@ git remote set-url upstream newUrl
 
 # 从upstream更新fork
 git fetch upstream
+
+# 从upstream合并代码到本地分支
+git rebase upstream/dev
 ```
 
 ## 常用命令

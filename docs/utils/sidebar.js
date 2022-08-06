@@ -32,6 +32,7 @@ const groups = {
             dir: 'javaScript',
             children: [
                 '前端模块化',
+                '获取location.search参数',
                 '判断元素是否在视口内',
                 '检测dom变化',
                 '判定鼠标是否点击的元素本身'
