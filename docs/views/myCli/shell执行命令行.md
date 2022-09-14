@@ -80,7 +80,6 @@ shell.cd('..')
 var str = shell.cat('-n', ['demo.html', 'package.json'])
 shell.echo(str)
 ```
-![](/md/shell-cat.png)
 
 ## 内容替换
 `.sed([options,] search_regex, replacement, file_array)` 将file_array中符合search_regex的内容替换为replacement，支持正则的捕获组自引用。一次处理一行内容，处理完成后把缓冲区内容送往屏幕，然后处理下一行，循环直至结束。

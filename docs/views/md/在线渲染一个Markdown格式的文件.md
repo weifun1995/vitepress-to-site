@@ -1,19 +1,3 @@
----
-name: 在线渲染一个markdown
-description: 常用的论坛文章基本使用markdwon格式编写,编写自己的静态博客网站解析和渲染markdown成为了首要要素
-tag: 插件
----
-
-
-## 前期准备
-
-
-
-## 引入依赖
-
-
-
-
 ## 解析markdown
 
 ```js
@@ -130,10 +114,11 @@ async function renderMarkdown () {
       }
     }
   })
+}
 
 ```
 
-```JS
+```js
 // 高亮某一行
 const getLineNums = (params) => {
   // 需要高亮的行号  [1, 4-5]
