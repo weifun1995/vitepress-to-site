@@ -5,7 +5,7 @@ const groups = {
             dir: 'dev',
             children: [
                 '配置node环境',
-                '配置项目axios',
+                '项目配置axios',
                 '配置github秘钥',
                 'node支持esm模块',
                 '开发中使用git',
@@ -56,7 +56,6 @@ const groups = {
             dir: 'component',
             children: [
                 'vue自定义插件原理及开发插件',
-                'vue使用渲染函数实现局部组件',
                 'vue实现单行文字过长时显示tooltip',
                 'vue利用canvas实现水印组件'
             ],
